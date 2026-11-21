@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1769E0;
+  --color-primary-hover: #1357BD;
+  --color-navy: #102A43;
+  --color-light-blue: #EFF6FF;
+  --color-ink: #172B4D;
+  --color-muted: #62748A;
+  --color-border: #E3EAF3;
+  --color-success: #16865B;
+  --color-warning: #D99018;
+  --color-error: #D64545;
+
+  --font-display: "Plus Jakarta Sans", "Noto Naskh Arabic", "Noto Sans Arabic", system-ui, -apple-system, sans-serif;
+  --font-sans: "DM Sans", "Noto Naskh Arabic", "Noto Sans Arabic", system-ui, -apple-system, sans-serif;
+  --font-urdu: "Noto Naskh Arabic", "Noto Sans Arabic", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  html, body {
+    scroll-behavior: auto;
+    overflow-anchor: none;
+  }
+
+  html {
+    font-family: var(--font-sans);
+    font-size: 16px;
+    color: var(--color-ink);
+    background-color: #FFFFFF;
+  }
+
+  html[dir="rtl"] {
+    font-family: var(--font-urdu);
+  }
+
+  html[dir="rtl"] h1,
+  html[dir="rtl"] h2,
+  html[dir="rtl"] h3,
+  html[dir="rtl"] h4,
+  html[dir="rtl"] h5,
+  html[dir="rtl"] h6 {
+    font-family: var(--font-urdu);
+    line-height: 1.45;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+
+  .ltr-num {
+    direction: ltr;
+    unicode-bidi: isolate;
+    display: inline-block;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
