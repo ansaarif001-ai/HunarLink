@@ -1,6 +1,7 @@
 # HunarLink (Demo Prototype)
 
-**Connecting Skills, Creating Opportunities**
+**Connecting Skills, Creating Opportunities.**
+>
 **Find a skilled worker. Agree on a price.**
 
 | | |
