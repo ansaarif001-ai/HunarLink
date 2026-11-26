@@ -139,4 +139,4 @@ Customers always pay **Rs 0 platform fee**. Only completed jobs record a 5% work
 
 ## Team
 
-<Moniza Khan & Ansa Arif>
+Moniza Khan & Ansa Arif
